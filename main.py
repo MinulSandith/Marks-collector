@@ -34,7 +34,6 @@ while running:
                 validity=0
             else:
                 total=total+int(mark)
-                validity=1
             x=x+1
         if validity==1:
 

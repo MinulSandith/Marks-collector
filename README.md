@@ -6,7 +6,10 @@ question's mark as one compact string and get the total back instantly.
 
 ## Demo
 
-https://github.com/MinulSandith/Marks-collector/assets/106053448/8d4d5dbb-6d45-4662-847f-1fab2a854c65
+You configure a list of maximum marks per question in `main.py`. Each entered
+marks string is a single line with **no spaces or separators** — the script
+splits it into chunks based on the width of each configured maximum, checks
+that no mark exceeds its question's maximum, and prints the sum.
 
 ## How it works
 
