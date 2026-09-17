@@ -12,18 +12,21 @@ while quit:
 
     elif needed_length!=len(entered_marks):
         print("Invalid input ")
-    
-    
-        
-    else:    
+
+
+
+    elif not entered_marks.isdigit():
+        print("Invalid input - marks must contain digits only")
+
+    else:
         for max_mark in max_marks:
-        
-    
+
+
             count=len(str(max_mark))+index
-        
+
             formed_marks.append(entered_marks[index:count])
             index=count
-    
+
 
         total=0
         x=0
@@ -34,7 +37,6 @@ while quit:
                 validity=0
             else:
                 total=total+int(mark)
-                validity=1
             x=x+1
         if validity==1:
 
