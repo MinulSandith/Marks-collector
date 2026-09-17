@@ -1,22 +1,19 @@
 max_marks=["05","05","05","07","05","10","08","15"]
-needed_length=16
+needed_length=sum(len(str(max_mark)) for max_mark in max_marks)
 
-quit=True
-while quit:
+running=True
+while running:
     entered_marks=input('\nEnter the marks - ')
     formed_marks=[]
     index=0
     validity=1
-    if entered_marks=="q":
-        quit=False
+    if entered_marks.lower()=="q":
+        running=False
 
-    elif needed_length!=len(entered_marks):
+    elif needed_length!=len(entered_marks) or not entered_marks.isdigit():
         print("Invalid input ")
 
 
-
-    elif not entered_marks.isdigit():
-        print("Invalid input - marks must contain digits only")
 
     else:
         for max_mark in max_marks:
